@@ -1,0 +1,15 @@
+.Tilt {
+	color: white solid;
+	display: flex;
+	align-items: flex-start;
+	background: white;
+	opacity: 0.8;
+
+}
+
+.Tilt:hover{
+
+	opacity: 1;
+	background: white;
+
+}
