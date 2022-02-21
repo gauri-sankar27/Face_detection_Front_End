@@ -61,7 +61,7 @@ class App extends Component{
   }
 
   componentDidMount(){
-      fetch('http://localhost:3000')
+      fetch('https://whispering-scrubland-67548.herokuapp.com')
       .then(response => response.json())
       .then(console.log)
 
@@ -99,7 +99,7 @@ class App extends Component{
 
     this.setState({imageurl:this.state.input})
     //app.models.predict(Clarifai.FACE_DETECT_MODEL,this.state.input)
-    fetch('http://localhost:3000/imageUrl', {
+    fetch('https://whispering-scrubland-67548.herokuapp.com/imageUrl', {
         method : 'POST',
         headers : {'Content-Type' : 'application/json'},
         body : JSON.stringify({
@@ -112,7 +112,7 @@ class App extends Component{
         if(response){
             // fetch the entries count which is returned by the server when /image is encountered. 
             // It sends an incremented entries.
-            fetch('http://localhost:3000/image', {
+            fetch('https://whispering-scrubland-67548.herokuapp.com/image', {
                 method : 'PUT',
                 headers : {'Content-Type' : 'application/json'},
                 body : JSON.stringify({
